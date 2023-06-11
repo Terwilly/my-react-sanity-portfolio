@@ -1,14 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import SinglePost from './components/SinglePost';
+import Post from './components/Post';
+import Project from './components/Project';
+import PageNotFound from './components/PageNotFound';
+
+// I import Routes instead of SWICTH who is depracated
+// Replace component by element
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="text-3xl font-bold  underline"> Hello Tailwind </h1>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Home />} path="/" exact />
+        <Route element={<About />} path="/about" />
+        <Route element={<SinglePost />} path="/post/:slug" />
+        <Route element={<Post />} path="/post" />
+        <Route element={<Project />} path="/project" />
+        <Route element={<PageNotFound />} path="*" />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
