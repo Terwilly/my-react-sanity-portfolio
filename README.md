@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### For the author
+
+This project based on youtube tutorial : [https://www.youtube.com/watch?v=NO7_jgzVgbc](https://www.youtube.com/watch?v=NO7_jgzVgbc)
+
+#### It's about sanity v2 but this one is been upgraded on sanity v3 with ReactJS as a frontEnd.
+
+Thanks
